@@ -14,9 +14,29 @@ body{
 }
 
 
-
+.navbar-nav{
+    font: 500 12px/40px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #222222;
+    
+}
 .p_120{
     padding: 120px 0px;
+}
+
+.header_area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.navbar a:hover{
+    color: #6247ea;
 }
 
 .top_menu{
@@ -26,27 +46,39 @@ body{
 
 .box_1620 {
     text-align: center;
+    font-weight: 100;
+
 }
+
+
 
 .box_1620 a {
     color:white;
     line-height: 40px;
      margin: 0 50px 0 0;
      font-size: 12px;
+     font-weight: 100;
 
 }
 .box_1620 a:hover {
-    color: blue;
+    color: #6247ea;
+    font-weight: 100;
+
 }
 
 .pur_btn{
     color: white;
     background-color: #6247ea;
-    height: 40px;
+    line-height: 40px;
     padding: 40px;
     text-align: center;
     font-size: 12px;
     font-weight: bold;
+    
+}
+
+.float-right a:hover{
+    color: #fff;
 }
 
 .banner_area{
@@ -212,7 +244,7 @@ a{
 .price_item:hover .price_text h2 {
     color: #6247ea;
 }
-a:hover {
+ .price_item:hover a {
     text-decoration: none;
     outline: none;
     color: #777777;
@@ -288,22 +320,275 @@ a:hover {
     box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
     border-color: #fff;
 }
+.service_area{
+    background: #6247ea;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.service_area::before{
+    content: "";
+    background: url(https://preview.colorlib.com/theme/hosthub/img/map-bg.png.webp) no-repeat scroll center center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.service_inner{
+    margin-bottom: -30px;
+}
+
+
+.service_item{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px 60px 40px 40px;
+    margin-bottom: 30px;
+    transition: all 300ms linear 0s;
+}
+
+.service_item h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.service_item h4 i{
+    font-size: 24px;
+    padding-right: 15px;  
+    position: relative;  
+    top:4px;
+
+}
+.main_title.white h2{
+  color:white;
+}
+.main_title.white p{
+    color:white;
+    opacity: .6;
+  }
+
+
+.service_item p{
+    margin-bottom: 0px;
+    color: #fff;
+    opacity: .6;
+}
+
+.service_item:hover{
+    background: #fff;
+    color: #fff;
+}
+
+.service_item:hover h4 {
+    color: #222222;
+}
+
+.service_item:hover p {
+    color: #777777;
+    opacity: 1;
+}
+
+.blog_item{
+    border:1px solid #eeeeee;
+    border-radius: 10px;
+    padding: 60px 30px;
+    transition: all 300ms linear 0s;
+
+}
+
+.blog_item h6 {
+    border-radius: 3px;
+    background: #ec9d5f;
+    display: inline-block;
+    color: #fff;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
 
 
 
+.blog_item h4 {
+    color: #222222;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    transition: all 300ms linear 0s;
+    font-weight: 600;
+}
+
+.blog_item p {
+    margin-bottom: 25px;
+    font-weight: 100;
+
+}
+
+.blog_item .view_text a {
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.view_text a i{
+    padding-right: 10px;
+}
 
 
+.blog_item:hover {
+    box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+    border-color: #fff;
+}
+
+.blog_item:hover h4 {
+    color: #6247ea;
+}
+
+.clients_logo_area {
+    background: #fafcff;
+}
 
 
+ .item {
+    text-align: center;
 
+}
+ .item img {
+    width: auto;
+    text-align: center;
+    display: block;
+    margin: auto;
+    line-height: 70px;
+    opacity: .5;
+    transition: all 300ms linear 0s;
+}
+.footer-area {
+    background: #04091e;
+}
+.footer_title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    margin-bottom: 28px;
+}
+.tp_widgets .list li {
+    margin-bottom: 12px;
+}
+.news_widgets p {
+    color: #fff;
+    opacity: .6;
+}
+.single-footer-widget .subscribe_form {
+    padding-top: 25px;
+}
+.single-footer-widget .input-group {
+    display: block !important;
+}
 
+.single-footer-widget input {
+    max-width: 340px;
+    width: 100%;
+    border: 1px solid #333333;
+    font-size: 13px;
+    line-height: 40px;
+    padding-right: 40px;
+    height: 40px;
+    color: #999999;
+    border-radius: 20px;
+    background: #fff;
+    padding-left: 20px;
+}
 
+.single-footer-widget .sub-btn {
+    background: #6247ea;
+    color: #fff;
+    font-weight: 500;
+    line-height: 38px;
+    font-size: 12px;
+    padding: 0px 38px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: -26px;
+    border: 1px solid #6247ea;
+    border-radius: 20px;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+}
 
+.mt-10 {
+    margin-top: 10px;
+}
 
+.info {
+    background: #38a4ff;
+}
+.single-footer-widget .instafeed {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.single-footer-widget .instafeed li {
+    margin: 5px;
+}
+.footer-bottom {
+    padding-top: 85px;
+}
+.footer-bottom .footer-text {
+    color: #fff;
+    opacity: .6;
+}
+.footer-bottom .footer-text i {
+    color: #6247ea;
+    opacity: 1;
+}
+.footer-bottom .footer-text a {
+    color: #6247ea;
+    opacity: 1;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.footer-bottom .footer-social {
+    text-align: right;
+}
+.footer-bottom .footer-social a {
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 6px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    background: #1e2235;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+}
 
-
-
-
+.footer-bottom .footer-social a:hover {
+    color: #fff;
+    background: #6247ea;
+}
+.single-footer-widget .sub-btn:hover {
+    background: transparent;
+    color: #6247ea;
+}
 
 
 
