@@ -722,7 +722,7 @@ a{
     color: #6247ea;
     font-weight: 600;
 }
- .info_item h6{
+ .info_item a{
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
@@ -730,7 +730,14 @@ a{
     color: #222222;
 
 }
+.info_item h6{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #222222;
 
+}
 .contact_info .info_item a {
     text-decoration: none;
     color: #222222;
@@ -784,8 +791,10 @@ iframe {
     transition: all 300ms linear 0s;
 }
 
-
-
+.submit_btn:hover {
+    background: transparent;
+    color: #6247ea;
+}
 
 
 
